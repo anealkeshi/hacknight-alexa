@@ -1,0 +1,125 @@
+{
+	"intents": [
+		{
+			"name": "AMAZON.CancelIntent",
+			"samples": []
+		},
+		{
+			"name": "AMAZON.HelpIntent",
+			"samples": []
+		},
+		{
+			"name": "AMAZON.StopIntent",
+			"samples": []
+		},
+		{
+			"name": "ConfirmNoIntent",
+			"samples": [
+				"no",
+				"no thanks",
+				"no thank you",
+				"wrong",
+				"incorrect"
+			],
+			"slots": []
+		},
+		{
+			"name": "ConfirmYesIntent",
+			"samples": [
+				"yes",
+				"yeah",
+				"correct",
+				"right"
+			],
+			"slots": []
+		},
+		{
+			"name": "ListLightningTalkIntent",
+			"samples": [
+				"provide the list of talks",
+				"give me the list of talks",
+				"provide list of talks",
+				"give me list of talks",
+				"what are the talks for today",
+				"talks for today",
+				"list lightning talks",
+				"provide the list of lightning talks",
+				"give me the list of lightning talks",
+				"provide list of lightning talks",
+				"give me list of lightning talks",
+				"what are the lightning talks for today",
+				"lightning talks for today"
+			],
+			"slots": []
+		},
+		{
+			"name": "ProvideVoterUniqueIdIntent",
+			"samples": [
+				"Voter unique number is {voterUniqueId}",
+				"My voter unique number is {voterUniqueId}",
+				"My voter number is {voterUniqueId}",
+				"voter number is {voterUniqueId}",
+				"four digit unique voter number {voterUniqueId}",
+				"four digit voter number {voterUniqueId}",
+				"four digit voter number is {voterUniqueId}",
+				"four digit unique voter number is {voterUniqueId}"
+			],
+			"slots": [
+				{
+					"name": "voterUniqueId",
+					"type": "AMAZON.FOUR_DIGIT_NUMBER",
+					"samples": []
+				}
+			]
+		},
+		{
+			"name": "VoteIntent",
+			"samples": [
+				"vote for {talkUniqueId}",
+				"i vote for {talkUniqueId}",
+				"i want to vote for {talkUniqueId}",
+				"please vote for {talkUniqueId}",
+				"i like to vote for {talkUniqueId}",
+				"i would like to vote for {talkUniqueId}"
+			],
+			"slots": [
+				{
+					"name": "talkUniqueId",
+					"type": "AMAZON.FOUR_DIGIT_NUMBER",
+					"samples": []
+				}
+			]
+		},
+		{
+			"name": "VotingStatusIntent",
+			"samples": [
+				"who is winning",
+				"which talk is winning",
+				"which lightning talk is winning",
+				"give the voting status",
+				"give the status",
+				"give me the voting status",
+				"give me the status",
+				"please give the voting status",
+				"please give the status",
+				"please give me the voting status",
+				"please give me the status",
+				"provide the status",
+				"please provide the status"
+			],
+			"slots": []
+		},
+		{
+			"name": "WhoDidIVoteIntent",
+			"samples": [
+				"Who did I vote for",
+				"Whom did I vote for",
+				"where did I vote",
+				"which talk did I vote for",
+				"which lightning talk did I vote for",
+				"which lightning talk"
+			],
+			"slots": []
+		}
+	]
+}

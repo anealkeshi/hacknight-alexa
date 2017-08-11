@@ -36,8 +36,8 @@ public class ListLightningTalkIntent implements AlexaIntentHandler {
         speechText.append(", unique number is ");
         speechText.append(t.getUniqueId());
         speechText.append(". ");
-        speechText.append("Is there anything else you need?");
       });
+      speechText.append("Is there anything else you need?");
     } else {
       speechText.append("Currently, there are no talks listed.");
       speechText.append(". ");

@@ -10,7 +10,7 @@ public interface VoterRepository extends CrudRepository<Voter, Integer> {
 
   Voter findByUniqueId(int uniqueId);
 
-  boolean deleteByUniqueId(int uniqueId);
+  int deleteByUniqueId(int uniqueId);
 
   Voter findByEmail(String email);
 }

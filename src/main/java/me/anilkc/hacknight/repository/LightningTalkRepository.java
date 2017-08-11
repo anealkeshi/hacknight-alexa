@@ -13,7 +13,7 @@ public interface LightningTalkRepository extends CrudRepository<LightningTalk, I
 
   LightningTalk findByUniqueId(int uniqueId);
 
-  boolean deleteByUniqueId(int uniqueId);
+  int deleteByUniqueId(int uniqueId);
 
   LightningTalk findByTopic(String topic);
 
